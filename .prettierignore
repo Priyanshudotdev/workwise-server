@@ -1,0 +1,10 @@
+node_modules/
+*.min.js
+*.map
+*.snap
+
+# Ignore artifacts:
+build
+
+# Ignore all HTML files:
+**/*.html
