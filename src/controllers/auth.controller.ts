@@ -24,8 +24,7 @@ const regsiterHandler = catchErrors(async (req, res) => {
 	});
 
 	// call service
-	const { accessToken, refreshToken, user } =
-		await createAccount(request);
+	const { accessToken, refreshToken, user } = await createAccount(request);
 
 	// return response
 	console.log("Get the data", { accessToken, refreshToken, user });

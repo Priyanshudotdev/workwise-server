@@ -6,9 +6,7 @@ const connectDb = async (): Promise<void> => {
 		const connection = await mongoose.connect(env.MONGODB_URI);
 
 		if (!connection) {
-			console.log(
-				"\n\nSomething went wrong will connecting to DB\n\n"
-			);
+			console.log("\n\nSomething went wrong will connecting to DB\n\n");
 			return;
 		}
 

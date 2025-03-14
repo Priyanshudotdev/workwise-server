@@ -10,7 +10,7 @@
 		"lint:fix": "eslint src/**/*.ts --fix",
 		"format:check": "prettier --check .",
 		"format:write": "prettier --write .",
-		"pre-commit": "bun run lint:fix && bun run format:check"
+		"pre-commit": "bun run lint:fix && bun run format:write"
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.22.0",
